@@ -1,0 +1,41 @@
+theme = "catppuccin_macchiato"
+
+[editor]
+line-number = "relative"
+mouse = false
+true-color = true
+bufferline = "always"
+rulers = [80]
+
+[editor.file-picker]
+hidden = false
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "block"
+
+[editor.statusline]
+left = ["spinner", "mode", "version-control", "read-only-indicator"]
+center = ["file-name"]
+right = ["diagnostics", "selections", "file-encoding", "file-type", "position"]
+separator = "|"
+mode.normal = "Normal"
+mode.insert = "Insert"
+mode.select = "Select"
+
+# or control each character
+[editor.whitespace.render]
+space = "all"
+tab = "all"
+nbsp = "none"
+nnbsp = "none"
+newline = "none"
+
+[editor.whitespace.characters]
+space = "·"
+nbsp = "⍽"
+nnbsp = "␣"
+tab = "→"
+newline = "⏎"
+tabpad = "·" # Tabs will look like "→···" (depending on tab width)
